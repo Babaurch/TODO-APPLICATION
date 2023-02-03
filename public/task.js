@@ -47,7 +47,7 @@ const editTask = (editId, editName) => {
     editTaskId = editId;
     isEditedTask = true;
     textInput.value = editName;
-    todoDeleteController();
+    // todoDeleteController();
     
 }
 
