@@ -4,7 +4,7 @@ import { start } from "./config/db.js";
 import bodyParser   from "body-parser";
 import userRoute from "./routes/userRoutes.js";
 import todoRoute from "./routes/todoRoute.js";
-
+import cors from "cors";
 
 
 
@@ -15,7 +15,7 @@ const app = express()
 
 
 //Middleware
-
+app.use(cors())
 app.use(express.json())
 app.set("view engine", "ejs")
 app.use(express.static("public"))
