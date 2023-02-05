@@ -117,7 +117,7 @@ const createTask = () => {
 
     }
 
-    fetch('http://localhost:3010/todo', {
+    fetch('https://todoapp-cu0k.onrender.com/todo', {
 
         method: 'POST',
         body: JSON.stringify(todoData),

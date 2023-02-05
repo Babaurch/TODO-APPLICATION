@@ -44,7 +44,7 @@ try {
         "password": password.value,
         }
     
-        fetch('http://localhost:3010/register', {
+        fetch('https://todoapp-cu0k.onrender.com/register', {
         
         method: 'POST',
         body: JSON.stringify(signUpData),
@@ -79,7 +79,7 @@ const loginUser = () => {
         "password": password.value,
     }
 
-    fetch('http://localhost:3010/login', {
+    fetch('https://todoapp-cu0k.onrender.com/login', {
 
         method: 'POST',
         body: JSON.stringify(loginData),
